@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../Styles/navbar.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <img src="../images/ecommerce.png" alt="">
+    <div class="drop">
+        <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drop-content">
+          <a class = "drop-link" href="#">Link 1</a>
+          <a class = "drop-link" href="#">Link 2</a>
+          <a class = "drop-link" href="#">Link 3</a>
+        </div>
+      </div> 
+      <div class="search"><input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button></div>
+            
+        <form action="" method="post">
+            <a href="#signin" id="active" class="signin-link">Sign in</a>
+            <a href="#help">Help</a>
+            <a href="#cart">Cart</a>
+            <a href="#home">Home</a>
+        </form>
+ 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var y = document.getElementById("active");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    y.className = "";
+  } else {
+    x.className = "topnav";
+    y.className = "active";
+  }
+}
+</script>
+
+</body>
+</html>
